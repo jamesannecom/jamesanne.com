@@ -52,13 +52,16 @@ reused, even though the repo is public.
 - [x] Email: buttons and email links use jamesacom@proton.me (stored
       reversed in `data-u` / `data-d` on `.js-email` links). Change it
       everywhere if you set up a jamesanne.com address
-- [ ] Privacy and Cookies pages: copied from annejames.io with the domain
-      changed. Set "Last updated" to the publish date
+- [ ] Privacy and Cookies pages: synced with annejames.io on 19 October 2026
+      (retention periods, meetergo/kMeet details). The Privacy page says this
+      site's email is on Proton and the booking calendar and kMeet are on
+      Infomaniak: check that's right, and update "Last updated" if you change
+      anything
 - [ ] Photos are reused from annejames.io. The home page ones have no visible
       credit yet (see the TODO comments in `index.html`). Replace any that
       look too much like a museum or community workshop
-- [ ] Testimonials: only Jean Massad's is live. The Slim.AI quote (Jillian
-      Hufnagel) is a good fit for this audience once approved
+- [x] Testimonials: Jean Massad's and Jillian Hufnagel's approved quote are
+      live, side by side (`testimonials--pair`), as on annejames.io
 - [ ] Preview the share image in LinkedIn Post Inspector
       (linkedin.com/post-inspector)
 
@@ -69,22 +72,30 @@ reused, even though the repo is public.
       annejames.io repo: `projects.html`, `case-studies/`)
 - [ ] Blog: "Writing" links straight to Substack for now. The blog layout from
       annejames.io can be copied over when there are tech-focused posts
-- [ ] Spanish and Portuguese versions, plus the language switcher
-- [ ] A custom 404 page, `robots.txt` and `sitemap.xml`
+- [ ] Spanish and Portuguese versions, plus the language switcher. `site.js`
+      already has the ES/PT interface text; follow the annejames.io pattern
+      (hreflang tags on every page, and in `sitemap.xml`)
+- [x] A custom 404 page, `robots.txt` and `sitemap.xml`
 
 ---
 
 ## Structure
 
 ```
-/                    index, services-startups, services-enterprise,
+/                    index, services-growth, services-ai-governance,
                      about, contact, privacy, cookies
+                     404.html: served by statichost for any missing page
 /css/styles.css      shared stylesheet (same as annejames.io)
 /js/site.js          mobile nav, dropdowns, service tabs, email address
+                     (same as annejames.io)
 /fonts/              self-hosted Newsreader + Inclusive Sans, with OFL licences
 /images/             WebP in several widths; share-default.jpg is 1200×630
+robots.txt, sitemap.xml
 statichost.yml       publish the repo root as-is
 ```
+
+`styles.css` and `site.js` are kept identical to annejames.io, so a fix on
+one site can be copied straight to the other.
 
 ## House rules (same as annejames.io)
 
@@ -96,6 +107,37 @@ statichost.yml       publish the repo root as-is
 - **Outside links open in a new tab** with `target="_blank" rel="noopener"`
   and a screen-reader "(opens in a new tab)" note.
 - **Strategy comes before AI governance** in titles and copy.
+- **Services by practice:** two service pages, Strategic Growth
+  (`services-growth.html`) and AI Governance (`services-ai-governance.html`).
+  Keep card ids unique across both pages so deep links stay unambiguous.
 - **Service tabs:** each service page has tab groups and cards. Deep links
-  work, e.g. `services-enterprise.html#skills`. With JavaScript off, all
+  work, e.g. `services-ai-governance.html#skills`. With JavaScript off, all
   cards show stacked.
+- **Image credits.** Feature photos (home page, case studies) carry a
+  visible credit (e.g. "Photo: … / Unsplash"). The decorative images on the
+  services pages have no credit and `alt=""`. Before adding an uncredited
+  image, check that its licence doesn't require attribution. Unsplash's
+  licence doesn't; Creative Commons BY licences do.
+- **Share images** are 1200×630 JPGs. Pages without their own use
+  `images/share-default.jpg`.
+- **Sitemap.** Add every new public page to `sitemap.xml`.
+- **404 page.** It can be served at any depth, so every link and asset in
+  `404.html` uses a root-absolute path (`/css/styles.css`, not
+  `css/styles.css`).
+- **Fonts.** Newsreader 600 (headings, variable optical size) and Inclusive
+  Sans 400–700 plus italic 400 (body). They're subset to Latin plus the
+  characters the pages use. If new text adds unusual characters (e.g. Polish
+  or Greek), rebuild the font files from the originals.
+
+## Design and accessibility
+
+- **Colour:** an off-white base, near-black text, plum (`--plum`) as the
+  single bold colour, and vermilion (`--spark`) for small marks only, never
+  text. The tokens are at the top of `styles.css`.
+- **Type:** 19px base size with generous line height, for comfortable reading
+  on a phone.
+- **Keyboard and focus:** visible focus rings, a skip-to-content link on every
+  page, and menus that work with the keyboard and Escape.
+- **Motion:** `prefers-reduced-motion` is respected.
+- **Page weight:** WebP images in multiple sizes with `loading="lazy"`, and no
+  frameworks.

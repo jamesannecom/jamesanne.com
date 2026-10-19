@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Every public page on jamesanne.com. Add new pages here (and their ES/PT
+     versions, with hreflang links, once translations exist). The 404 page is
+     left out on purpose. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://jamesanne.com/</loc>
+  </url>
+  <url>
+    <loc>https://jamesanne.com/services-growth.html</loc>
+  </url>
+  <url>
+    <loc>https://jamesanne.com/services-ai-governance.html</loc>
+  </url>
+  <url>
+    <loc>https://jamesanne.com/about.html</loc>
+  </url>
+  <url>
+    <loc>https://jamesanne.com/contact.html</loc>
+  </url>
+  <url>
+    <loc>https://jamesanne.com/privacy.html</loc>
+  </url>
+  <url>
+    <loc>https://jamesanne.com/cookies.html</loc>
+  </url>
+</urlset>
