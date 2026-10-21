@@ -41,7 +41,9 @@ statichost.yml       publish the repo root as-is
   on the service pages have no credit and `alt=""`. Before adding an
   uncredited image, check that its licence doesn't require attribution.
 - **Share images** are 1200×630 JPGs. Pages without their own use
-  `images/share-default.jpg`.
+  `images/share-default.jpg`. Spanish and Portuguese pages use the
+  `-es` / `-pt` versions, which are the English images with the headline
+  and subtitle re-set in the site fonts.
 - **Sitemap.** Add every new public page to `sitemap.xml`.
 - **404 page.** It can be served at any depth, so every link and asset in
   `404.html` uses a root-absolute path (`/css/styles.css`, not
