@@ -68,10 +68,10 @@ reused, even though the repo is public.
 ### 5. Later
 - [ ] Move the domain to Infomaniak in July–August 2027, before the
       15 September 2027 renewal (turn off GoDaddy auto-renew first)
-- [ ] Projects / case studies for tech clients (the page layout is in the
-      annejames.io repo: `projects.html`, `case-studies/`)
-- [ ] Blog: "Writing" links straight to Substack for now. The blog layout from
-      annejames.io can be copied over when there are tech-focused posts
+- [x] Experience page (`experience.html`): six boxes with company name, role
+      and public achievements; no logos, no internal figures, no case-study pages
+- [ ] Blog: "Writing" and the footer Substack link are removed until there
+      are posts for this audience. Add them back to the nav and footer then
 - [ ] Spanish and Portuguese versions, plus the language switcher. `site.js`
       already has the ES/PT interface text; follow the annejames.io pattern
       (hreflang tags on every page, and in `sitemap.xml`)
@@ -83,7 +83,7 @@ reused, even though the repo is public.
 
 ```
 /                    index, services-growth, services-ai-governance,
-                     about, contact, privacy, cookies
+                     experience, about, contact, privacy, cookies
                      404.html: served by statichost for any missing page
 /css/styles.css      shared stylesheet (same as annejames.io)
 /js/site.js          mobile nav, dropdowns, service tabs, email address
