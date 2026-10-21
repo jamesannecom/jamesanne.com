@@ -1,30 +1,175 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Every public page on jamesanne.com. Add new pages here (and their ES/PT
-     versions, with hreflang links, once translations exist). The 404 page is
-     left out on purpose. -->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<!-- Every public page on jamesanne.com, in English, Spanish (/es/) and Portuguese (/pt/).
+     Each URL lists its language versions with hreflang. Add new pages here in all three
+     languages. The 404 page is left out on purpose. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://jamesanne.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jamesanne.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jamesanne.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://jamesanne.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jamesanne.com/"/>
   </url>
   <url>
     <loc>https://jamesanne.com/services-growth.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jamesanne.com/services-growth.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jamesanne.com/es/servicios-crecimiento.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://jamesanne.com/pt/servicos-crescimento.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jamesanne.com/services-growth.html"/>
   </url>
   <url>
     <loc>https://jamesanne.com/services-ai-governance.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jamesanne.com/services-ai-governance.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jamesanne.com/es/servicios-gobernanza-ia.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://jamesanne.com/pt/servicos-governacao-ia.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jamesanne.com/services-ai-governance.html"/>
   </url>
   <url>
     <loc>https://jamesanne.com/experience.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jamesanne.com/experience.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jamesanne.com/es/experiencia.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://jamesanne.com/pt/experiencia.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jamesanne.com/experience.html"/>
   </url>
   <url>
     <loc>https://jamesanne.com/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jamesanne.com/about.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jamesanne.com/es/sobre-mi.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://jamesanne.com/pt/sobre-mim.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jamesanne.com/about.html"/>
   </url>
   <url>
     <loc>https://jamesanne.com/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jamesanne.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jamesanne.com/es/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://jamesanne.com/pt/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jamesanne.com/contact.html"/>
   </url>
   <url>
     <loc>https://jamesanne.com/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jamesanne.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jamesanne.com/es/privacidad.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://jamesanne.com/pt/privacidade.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jamesanne.com/privacy.html"/>
   </url>
   <url>
     <loc>https://jamesanne.com/cookies.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jamesanne.com/cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jamesanne.com/es/cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://jamesanne.com/pt/cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jamesanne.com/cookies.html"/>
+  </url>
+  <url>
+    <loc>https://jamesanne.com/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jamesanne.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jamesanne.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://jamesanne.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jamesanne.com/"/>
+  </url>
+  <url>
+    <loc>https://jamesanne.com/es/servicios-crecimiento.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jamesanne.com/services-growth.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jamesanne.com/es/servicios-crecimiento.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://jamesanne.com/pt/servicos-crescimento.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jamesanne.com/services-growth.html"/>
+  </url>
+  <url>
+    <loc>https://jamesanne.com/es/servicios-gobernanza-ia.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jamesanne.com/services-ai-governance.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jamesanne.com/es/servicios-gobernanza-ia.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://jamesanne.com/pt/servicos-governacao-ia.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jamesanne.com/services-ai-governance.html"/>
+  </url>
+  <url>
+    <loc>https://jamesanne.com/es/experiencia.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jamesanne.com/experience.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jamesanne.com/es/experiencia.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://jamesanne.com/pt/experiencia.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jamesanne.com/experience.html"/>
+  </url>
+  <url>
+    <loc>https://jamesanne.com/es/sobre-mi.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jamesanne.com/about.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jamesanne.com/es/sobre-mi.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://jamesanne.com/pt/sobre-mim.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jamesanne.com/about.html"/>
+  </url>
+  <url>
+    <loc>https://jamesanne.com/es/contacto.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jamesanne.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jamesanne.com/es/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://jamesanne.com/pt/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jamesanne.com/contact.html"/>
+  </url>
+  <url>
+    <loc>https://jamesanne.com/es/privacidad.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jamesanne.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jamesanne.com/es/privacidad.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://jamesanne.com/pt/privacidade.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jamesanne.com/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://jamesanne.com/es/cookies.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jamesanne.com/cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jamesanne.com/es/cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://jamesanne.com/pt/cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jamesanne.com/cookies.html"/>
+  </url>
+  <url>
+    <loc>https://jamesanne.com/pt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jamesanne.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jamesanne.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://jamesanne.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jamesanne.com/"/>
+  </url>
+  <url>
+    <loc>https://jamesanne.com/pt/servicos-crescimento.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jamesanne.com/services-growth.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jamesanne.com/es/servicios-crecimiento.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://jamesanne.com/pt/servicos-crescimento.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jamesanne.com/services-growth.html"/>
+  </url>
+  <url>
+    <loc>https://jamesanne.com/pt/servicos-governacao-ia.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jamesanne.com/services-ai-governance.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jamesanne.com/es/servicios-gobernanza-ia.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://jamesanne.com/pt/servicos-governacao-ia.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jamesanne.com/services-ai-governance.html"/>
+  </url>
+  <url>
+    <loc>https://jamesanne.com/pt/experiencia.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jamesanne.com/experience.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jamesanne.com/es/experiencia.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://jamesanne.com/pt/experiencia.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jamesanne.com/experience.html"/>
+  </url>
+  <url>
+    <loc>https://jamesanne.com/pt/sobre-mim.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jamesanne.com/about.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jamesanne.com/es/sobre-mi.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://jamesanne.com/pt/sobre-mim.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jamesanne.com/about.html"/>
+  </url>
+  <url>
+    <loc>https://jamesanne.com/pt/contacto.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jamesanne.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jamesanne.com/es/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://jamesanne.com/pt/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jamesanne.com/contact.html"/>
+  </url>
+  <url>
+    <loc>https://jamesanne.com/pt/privacidade.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jamesanne.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jamesanne.com/es/privacidad.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://jamesanne.com/pt/privacidade.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jamesanne.com/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://jamesanne.com/pt/cookies.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jamesanne.com/cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jamesanne.com/es/cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://jamesanne.com/pt/cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jamesanne.com/cookies.html"/>
   </url>
 </urlset>
