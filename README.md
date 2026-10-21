@@ -111,7 +111,7 @@ one site can be copied straight to the other.
   (`services-growth.html`) and AI Governance (`services-ai-governance.html`).
   Keep card ids unique across both pages so deep links stay unambiguous.
 - **Service tabs:** each service page has tab groups and cards. Deep links
-  work, e.g. `services-ai-governance.html#skills`. With JavaScript off, all
+  work, e.g. `services-ai-governance.html#policies`. With JavaScript off, all
   cards show stacked.
 - **Image credits.** Feature photos (home page, case studies) carry a
   visible credit (e.g. "Photo: … / Unsplash"). The decorative images on the
