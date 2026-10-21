@@ -1085,6 +1085,10 @@ input:focus, select:focus, textarea:focus { outline: 3px solid var(--ink); outli
 /* ---------- Utilities ---------- */
 .stack { display: grid; gap: 1rem; }
 .center { text-align: center; }
+.center h2 { text-wrap: balance; }
+/* Line break that only applies on wide screens */
+.br-wide { display: none; }
+@media (min-width: 52em) { .br-wide { display: inline; } }
 .mt-0 { margin-top: 0; }
 .eyebrow {
   color: var(--ink-soft);
@@ -1226,6 +1230,11 @@ span.tag { background: var(--panel); }
   .cta-pair { grid-template-columns: 1fr 1fr; }
   .cta-card { padding-inline: var(--gutter) clamp(2rem, 5vw, 5rem); }
 }
+
+/* A single CTA card spanning the full width (while the newsletter card is hidden): centre it like the closing bands on the service pages. */
+.cta-card--solo { align-items: center; text-align: center; }
+.cta-card--solo h2 { max-width: 40rem; text-wrap: balance; }
+@media (min-width: 52em) { .cta-card--solo { padding-inline: var(--gutter); } }
 
 /* ---------- Connect page ---------- */
 .connect-grid { display: grid; gap: 1.25rem; }
