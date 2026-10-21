@@ -1308,3 +1308,28 @@ span.tag { background: var(--panel); }
 .testimonials--single + .testimonials-more { text-align: center; margin-inline: auto; }
 /* Two quotes: two equal columns on wide screens instead of leaving the third column empty. */
 @media (min-width: 60em) { .testimonials--pair { grid-template-columns: repeat(2, 1fr); } }
+
+/* ---------- Service art (replaces photos) ----------
+   Grain colour field (plum base + orange/cornflower glows) with a white line drawing, one per service.
+   Glows are CSS so they fill any box shape; the drawing is inline SVG cropped like object-fit: cover.
+   Orange is used as glow and accent mark only, never behind small text. */
+.art { position: absolute; inset: 0; overflow: hidden; background-color: #4a1f43; color: #fff; }
+.art::after { content: ""; position: absolute; inset: 0; pointer-events: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='g' x='0' y='0' width='100%25' height='100%25' color-interpolation-filters='sRGB'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 0 1'/%3E%3CfeComponentTransfer%3E%3CfeFuncR type='linear' slope='2.2' intercept='-0.6'/%3E%3CfeFuncG type='linear' slope='2.2' intercept='-0.6'/%3E%3CfeFuncB type='linear' slope='2.2' intercept='-0.6'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E"); mix-blend-mode: soft-light; opacity: 0.9; }
+.accordion-media .art svg, .svc-card__media .art svg { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 1; }
+.accordion-media--art { overflow: hidden; background: #4a1f43; }
+@media (max-width: 30em) { .accordion-media--art { position: relative; } }
+.svc-card__media:has(.art) { position: relative; overflow: hidden; background: #4a1f43; }
+.art--bets   { background-image: radial-gradient(ellipse 85% 95% at 90% 105%, #f05a28, rgba(240,90,40,0) 70%), radial-gradient(ellipse 70% 80% at 5% -5%, #8f4d83, rgba(143,77,131,0) 70%); }
+.art--grid   { background-color: #632c59; background-image: radial-gradient(ellipse 80% 90% at 10% 105%, #93bafc, rgba(147,186,252,0) 70%), radial-gradient(ellipse 60% 65% at 95% 0%, rgba(240,90,40,0.7), rgba(240,90,40,0) 70%); }
+.art--rings  { background-image: radial-gradient(ellipse 75% 90% at 82% 85%, rgba(240,90,40,0.85), rgba(240,90,40,0) 65%), radial-gradient(ellipse 70% 80% at 0% 0%, rgba(147,186,252,0.55), rgba(147,186,252,0) 70%); }
+.art--signal { background-color: #3f1a39; background-image: radial-gradient(ellipse 70% 100% at 0% 50%, rgba(147,186,252,0.6), rgba(147,186,252,0) 70%), radial-gradient(ellipse 70% 90% at 100% 50%, rgba(240,90,40,0.85), rgba(240,90,40,0) 70%); }
+.art--fit { background-color: #632c59; background-image: radial-gradient(ellipse 95% 70% at 50% 110%, #f05a28, rgba(240,90,40,0) 70%), radial-gradient(ellipse 80% 60% at 50% -10%, rgba(147,186,252,0.5), rgba(147,186,252,0) 70%); }
+.art--tree   { background-image: radial-gradient(ellipse 75% 85% at 100% 100%, rgba(240,90,40,0.9), rgba(240,90,40,0) 70%), radial-gradient(ellipse 75% 85% at 0% 0%, rgba(147,186,252,0.6), rgba(147,186,252,0) 70%); }
+/* Light variant (project services): warm off-white field, plum lines, same orange accent */
+.art--light { background-color: #faf6f3; color: var(--plum); }
+.art--light::after { opacity: 0.7; }
+.svc-card__media:has(.art--light), .accordion-media--art:has(.art--light) { background: #faf6f3; }
+.art--light.art--bets   { background-image: radial-gradient(ellipse 85% 95% at 95% 110%, rgba(240,90,40,0.75), rgba(240,90,40,0) 70%), radial-gradient(ellipse 75% 85% at 0% -5%, rgba(147,186,252,0.7), rgba(147,186,252,0) 70%); }
+.art--light.art--signal { background-image: radial-gradient(ellipse 70% 100% at 0% 50%, rgba(147,186,252,0.75), rgba(147,186,252,0) 70%), radial-gradient(ellipse 70% 90% at 105% 50%, rgba(240,90,40,0.6), rgba(240,90,40,0) 70%); }
+.art--light.art--fit { background-image: radial-gradient(ellipse 95% 70% at 50% 115%, rgba(240,90,40,0.7), rgba(240,90,40,0) 70%), radial-gradient(ellipse 85% 65% at 50% -15%, rgba(147,186,252,0.65), rgba(147,186,252,0) 70%); }
+.art--light.art--tree   { background-image: radial-gradient(ellipse 75% 85% at 105% 105%, rgba(240,90,40,0.65), rgba(240,90,40,0) 70%), radial-gradient(ellipse 75% 85% at 0% 0%, rgba(147,186,252,0.7), rgba(147,186,252,0) 70%); }
